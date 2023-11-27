@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", ;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(239, 161, 239);
+}
+
+.profileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profileCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: rgb(4, 104, 104);
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: teal;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profileImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+ .textData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color: gray; */
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.job {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.mediaBtns {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.link {
+    text-decoration: none;
+    background-color: teal;
+    margin: 0 8px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50% ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: teal;
+    padding: 8px 24px;
+    margin: 0 10px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(7, 70, 70);
+}
+
+.analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.data {
+    display: flex;
+    color: rgb(53, 52, 52);
+    padding: 0 24px;
+    border-right: 4px solid #e7e7e7;
+}
+
+.data:last-child {
+    border-right: none;
+}
+
+.data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+/* .data i:hover {
+    color: red;
+    font-size: 20px;
+} */
+
+.bx-heart:hover {
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.bx-message-rounded:hover {
+    color: rgb(61, 97, 155);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.bx-share:hover {
+    color: rgb(61, 155, 144);
+    font-size: 20px;
+    font-weight: 800;
+}
